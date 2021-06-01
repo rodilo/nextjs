@@ -14,6 +14,7 @@ jobs:
     - name: List files
       id: Experiment
       run: asdas
+      continue-on-error: true
     - name: The job has failed
       if: ${{ failure() }}
       run: Echo job has failed
