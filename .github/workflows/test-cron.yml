@@ -17,4 +17,4 @@ jobs:
       continue-on-error: true
     - name: The job has failed
       if: ${{ failure() }}
-      run: Echo job has failed
+      run: echo job has failed
