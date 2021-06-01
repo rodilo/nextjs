@@ -12,9 +12,13 @@ jobs:
       uses: actions/checkout@v2
       with: { ref: debug }
     - name: List files
-      id: Experiment
-      run: asdas
+      id: experiment
+      run: export STEP_ONE=123
       continue-on-error: true
     - name: The job has failed
-      if: ${{ failure() }}
-      run: echo job has failed
+      env:
+        STEP_ONE: ${{ steps.experiment.env.STEP_ONE }}
+        STEP_ONE_1: ${{ steps.experiment.outputs.STEP_ONE }}
+      run: |
+        echo $STEP_ONE
+        echo $STEP_ONE_1
