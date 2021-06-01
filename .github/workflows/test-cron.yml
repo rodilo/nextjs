@@ -16,4 +16,4 @@ jobs:
       run: asdas
     - name: The job has failed
       if: ${{ failure() }}
-      run: Echo job has failed ${{ failure() }}
+      run: Echo job has failed
