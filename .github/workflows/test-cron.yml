@@ -32,4 +32,10 @@ jobs:
         run: |
           echo $STEP_ONE
           echo $STEP_ONE_1
+          echo $GITHUB_ACTION
+          echo $GITHUB_ACTION_PATH
+          echo $GITHUB_RUN_NUMBER
+          echo $GITHUB_JOB
+          echo $GITHUB_RUN_ID
+
   
