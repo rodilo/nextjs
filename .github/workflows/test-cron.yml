@@ -38,5 +38,7 @@ jobs:
           echo $GITHUB_JOB
           echo $GITHUB_RUN_ID
           echo test
+          export GITHUB_WORKFLOW_URL=https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+          echo $GITHUB_WORKFLOW_URL
 
   
