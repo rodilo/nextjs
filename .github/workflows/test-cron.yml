@@ -37,5 +37,6 @@ jobs:
           echo $GITHUB_RUN_NUMBER
           echo $GITHUB_JOB
           echo $GITHUB_RUN_ID
+          echo test
 
   
