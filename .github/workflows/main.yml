@@ -9,7 +9,7 @@ on:
     paths:
       - "pages/**"
     branches:
-      - "**"
+      - '!master' 
     tags-ignore:
       - "**"
 
