@@ -2,5 +2,5 @@
 
 export default (req, res) => {
   res.statusCode = 200;
-  res.json({ name: "John Doe 234455444" });
+  res.json({ name: "John Doe 2344554ss44" });
 };
