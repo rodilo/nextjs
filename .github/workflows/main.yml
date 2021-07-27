@@ -9,6 +9,7 @@ on:
     paths:
       - "pages/**"
     branches:
+      - '**'        # matches every branch
       - '!master' 
     tags-ignore:
       - "**"
